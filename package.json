@@ -1,0 +1,32 @@
+{
+  "name": "feishu-crosspost",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "在飞书里发一条消息，自动同步发布到微博、即刻、豆瓣（Cross-post a single Feishu message to Weibo, Jike and Douban）",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qishuai6/feishu-crosspost.git"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "feishu",
+    "lark",
+    "weibo",
+    "jike",
+    "douban",
+    "crosspost",
+    "bot",
+    "automation"
+  ],
+  "scripts": {
+    "start": "node src/index.js",
+    "post": "node src/cli.js",
+    "verify": "node src/cli.js --verify"
+  },
+  "dependencies": {
+    "@larksuiteoapi/node-sdk": "^1.40.0"
+  }
+}
